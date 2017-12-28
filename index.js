@@ -5,8 +5,7 @@ var app = express()
 app.set('port', (process.env.PORT || 5000))
 
 app.get('/', function(req, res) {
-  console.log(req.query)
-  res.send('')
+  res.send(req.query)
 })
 
 app.listen(app.get('port'), function() {
